@@ -1,0 +1,137 @@
+#footer{
+    height:52vw;
+    width: 100vw;
+    background: rgb(22,26,66);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(2, 8, 24, 1) 19%, rgba(9, 26, 72, 1) 41%, rgba(14, 47, 130, 1) 67%, rgba(32, 83, 170, 1) 100%);
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 2vw;
+}
+#fleft{
+    height:100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;    
+}
+#fright{
+    height:100%;
+    width: 67.5%;
+    display: flex;
+    flex-direction: column;    
+}
+#fmain{
+    height:4vw;
+    width: 20vw;   
+    font-family: xx;
+    color:rgb(245, 243, 243);
+    font-size: 2.6vw;
+    font-weight: 600; 
+    margin-left: 1.5vw;
+}
+.link{
+    position: relative;
+    transform: translateY(3vw);
+    margin-left: 8vw;    
+}
+#on{
+    color:rgb(183, 179, 179);
+}
+#off{
+    position: absolute;
+    margin-top: 2vw;
+    transform:translateX(-5vw);
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+}
+.off:hover #off{
+    opacity: 1;
+    transform:translateX(-3vw);
+    margin-top: 0;
+}
+.off{
+   padding-left:3vw;
+}
+
+
+.link a{
+    font-family: a1;
+    color:white;
+    font-size: 2.5vw;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1vw;
+    transform: translateY(3vw);
+    opacity: 0;
+}
+#video-wrapper{
+    margin-left: 1.5vw;
+    margin-top: 9vw;
+   width:80%;
+   height: 20vw;   
+   overflow: hidden;  
+   clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+#video-wrapper video{
+    width: 29vw;
+    height:17vw;
+    object-fit: cover;
+}
+
+#socials{
+    display: flex;
+    gap: 13vw;
+    margin-left: 15vw;
+    margin-top: 10vw;
+    color:whitesmoke;
+    font-family: a2;
+    font-size: 0.9vw;
+    font-weight: 300;
+ }
+ #socials .box{
+    height:1.6vw;   
+    width:100%;
+    overflow: hidden;
+ }
+ #socials a{
+     text-decoration: none;
+     color:whitesmoke;
+     height:2vw;
+ }
+ #socials .sub-col p{
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+     transform: translateY(-6vw);
+     opacity: 0;     
+     width:100%;    
+     overflow: hidden;
+
+     transform: translateY(-5vw);
+     opacity: 0;
+ Stashed changes
+
+     transform: translateY(-5vw);
+     opacity: 0;
+ Stashed changes
+ }
+ .spacediv{
+     margin-top: 5vw;
+ }
+ #header{
+    color:whitesmoke;
+    font-family: sc;
+    font-size:23.5vw;   
+    font-weight: 600;
+    margin-top: 2vw;
+    overflow: hidden;
+   
+}
+#header span{
+    position: relative;
+     opacity: 1;
+    display: inline-block;
+    transform:scale(0.75) translateY(7vw) rotateY(90deg);
+    transform-origin: bottom;
+}

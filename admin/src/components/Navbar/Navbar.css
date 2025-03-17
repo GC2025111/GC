@@ -1,0 +1,71 @@
+
+#navbar
+{
+    height:6.3vw;
+    width: 100vw;
+    background: rgb(9,26,72);
+     background: linear-gradient(90deg, rgba(9,26,72,1) 1%, rgba(10,32,90,1) 30%, rgba(32,83,170,1) 65%, rgba(32,83,170,1) 83%, rgba(63,107,181,1) 95%, rgba(66,109,182,1) 100%);
+     padding-left:1vw;
+     padding-right: 1vw;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+#navleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+    font-family: xx;
+    color:whitesmoke;    
+}
+#navleft img {
+    height: 23vw;
+    width: auto;
+    object-fit: contain;
+}
+#nlt
+{
+    font-weight: 700;
+    font-size: 2.9vw;
+    margin: 0;
+}
+#nlb{
+    font-weight: 500;
+    font-size: 1vw;
+}
+#navright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 16vw;
+    font-family: xx;
+    color: whitesmoke;    
+}
+#nr-t{
+    height:2.1vw;
+    width:10vw;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1vw; 
+}
+#nr-b{
+    height:4.2vw;
+    width:20vw;      
+    font-family: xx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25vw;
+    }  
+    #navr-l{        
+        width:10vw;
+    }
+.nunder1{
+    height:2px;
+    width:0%;
+    background-color: whitesmoke;
+}

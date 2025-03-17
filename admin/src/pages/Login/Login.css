@@ -1,0 +1,159 @@
+#loginmain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vh;    
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(2, 8, 24, 1) 19%, rgba(9, 26, 72, 1) 41%, rgba(14, 47, 130, 1) 67%, rgba(32, 83, 170, 1) 100%);
+  }
+  #lleft {
+    height: 98vh;
+    width: 45vw;
+    background-color: aliceblue;      
+    border-radius:10px;
+    overflow: hidden;
+    margin-left: 1vh;   
+  }
+  #lleft video{
+    width: 100%;
+    height: 148%;
+    object-fit: cover;     
+    
+  }
+
+  #lltext{
+    position: absolute;
+    z-index: 5;
+    bottom:2vw;
+    font-family: xx;
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    font-weight: 650; 
+    color: pink;
+    mix-blend-mode:difference;   
+  }
+  #lright{
+    height:76vh;
+    width:43vw;   
+    margin-right: 5vw;
+  }
+  #lotop{
+    height:25.5vh;
+    width: 100%;    
+    margin-right: 5vw;
+    font-family: y2;    
+  }
+  #lotop h1{
+    color:whitesmoke;
+    font-size: 3.5vw;
+  }
+  #lotop h4{
+    color:rgb(201, 199, 199);
+    font-size: 1.2vw;    
+  }
+  #lomid{
+    height:45vh;
+    width: 100%;   
+  }
+  #lobot{
+    height:5vh;
+    width: 100%;    
+    font-family: y2;
+    font-size: 1.2vw;    
+    color:whitesmoke;
+  }
+  .form{
+    color:rgb(201, 199, 199);
+    font-size: 1.1vw;
+    font-family: y1; 
+    width: 32vw;   
+    height: 6vh;
+    font-weight: 600;    
+  }
+  .form-group{
+    width:35vw;
+  }
+  .place1{
+    width:32vw;
+    font-family: y1;
+    font-size: 1.1vw;
+    height:6vh;
+    margin-bottom: 0.9vw;
+    margin-top: 0.2vw;
+    border-radius: 5px;
+    background-color: transparent;
+    color:whitesmoke;
+    border:1.5px solid rgb(201, 199, 199);
+  }
+  #login-button{
+    height:8vh;
+    width:32vw;
+    border-radius: 5px;
+    font-family: y1;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 2.5vw;
+    background-color: #1d1d1d;
+    color:whitesmoke;
+    cursor:pointer;
+  }
+  
+  .password-wrapper {
+    position: relative;
+    width: 35vw;
+  }
+  
+  .place1 {
+    width: 35vw;
+    padding-right: 0vw; 
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 45%;
+    right: 0.5vw; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1.5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .password-container {
+    position: relative;
+    width: 100%; 
+    margin-bottom: 0.7vw;
+}
+
+.password-container input {
+    width: 32vw; 
+    font-family: y1;
+    font-size: 1.1vw;
+    height: 6vh;
+    padding-right: 2.5rem; 
+    border-radius: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid rgb(201, 199, 199);
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    font-size: 1.5vw;
+    color: rgb(201, 199, 199);
+    cursor: pointer;
+}
+.place1:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1.5px solid whitesmoke; /* Glowing border color */
+    box-shadow: 0 0 40px #2252A7; /* Add the glow effect */
+    transition: all 1s expo-out; 
+  }

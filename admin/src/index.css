@@ -1,0 +1,44 @@
+*{
+    border:0;
+    margin: 0;    
+}
+html{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: xx;
+    src: url(/Fonts/x1.ttf);
+}
+@font-face {
+    font-family: y1;
+    src: url(/Fonts/y1.woff2);
+}
+@font-face {
+    font-family: y2;
+    src: url(/Fonts/y2.woff2);
+}
+@font-face {
+    font-family: z1;
+    src: url(/Fonts/z1.woff2);
+}
+@font-face {
+    font-family: q1;
+    src: url(/Fonts/q1.woff2);
+}
+@font-face {
+    font-family: ab;
+    src: url(/Fonts/ab.woff2);
+}
+@font-face {
+    font-family: a1;
+    src: url(/Fonts/aaa.woff2);
+}
+@font-face {
+    font-family: a2;
+    src: url(/Fonts/aaaa1.woff2);
+}   
+@font-face {
+    font-family: sc;
+    src: url(/Fonts/sc.woff);
+}   
+

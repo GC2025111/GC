@@ -1,0 +1,80 @@
+#addproduct{
+    margin:1vw;
+    font-family:xx;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+#addkkrform p{
+    margin-top: 0.58vw;
+    margin-bottom: 0.6vw;
+}
+#productname{
+    height: 2vw;
+    width: 45vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#uploadimagesdiv{
+    display: flex;
+    height: 8vw;
+    width: 18vw;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#uploadimagesdiv img{
+    height:8vw;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid black;
+}
+#productdescription{
+    height: 6.5vw;
+    width: 45vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#productprice{
+    height:1.7vw;
+    width:10vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#productquantity{
+    height:1.7vw;
+    width:10vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#productdiscount{
+    height: 1.7vw;
+    width: 10vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#isEssential{
+    height: 1.2vw;
+    width: 1.2vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: y1;
+}
+#addproductbutton{
+    height: 3vw;
+    width: 15vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    font-family: xx;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: #1d1d1d;
+    color: #fff;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+

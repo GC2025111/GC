@@ -1,0 +1,49 @@
+#sidemenu {
+    height: 20.5vw;
+    width: 20vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    font-family: xx;
+    border-right: 2px solid dimgray;
+}
+
+#sidemenu img {
+    height: 4vw;
+    width: auto;
+}
+.menu-item1 {
+    height:5vw;
+    display: flex;
+    align-items: center;   
+    border-bottom: 2px solid dimgray;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+}
+.menu-item1.active {
+    background: rgb(9,26,72);
+    background: linear-gradient(90deg, rgba(9,26,72,1) 1%, rgba(10,32,90,1) 30%, rgba(32,83,170,1) 65%, rgba(32,83,170,1) 83%, rgba(63,107,181,1) 95%, rgba(66,109,182,1) 100%);
+    color: whitesmoke;
+}
+
+.menu-item1 img {
+    margin-right: 1.5vw;
+}
+.menu-item2 {
+    height:5vw;
+    display: flex;
+    align-items: center;   
+    border-bottom: 2px solid dimgray;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+}
+.menu-item2.active {
+    background: rgb(9,26,72);
+    background: linear-gradient(90deg, rgba(9,26,72,1) 1%, rgba(10,32,90,1) 30%, rgba(32,83,170,1) 65%, rgba(32,83,170,1) 83%, rgba(63,107,181,1) 95%, rgba(66,109,182,1) 100%);
+    color: whitesmoke;
+}
+
+.menu-item2 img {
+    margin-right: 1.5vw;
+}
