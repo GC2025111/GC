@@ -24,7 +24,7 @@ function Login() {
     setShowPassword((prev) => !prev);
   };
   const backendUrl = import.meta.env.VITE_BACKEND;
-  console.log(backendUrl);
+  console.log("backendUrl="+backendUrl);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
