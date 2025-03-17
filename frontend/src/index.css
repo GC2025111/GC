@@ -1,0 +1,54 @@
+*{
+    border:0;
+    margin: 0; 
+}
+body{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pp;
+    src: url(/Fonts/pp.ttf);
+}
+@font-face {
+    font-family: xx;
+    src: url(/Fonts/xx.woff2);
+}
+@font-face {
+    font-family: a1;
+    src: url(/Fonts/aaa.woff2);
+}
+@font-face {
+    font-family: a2;
+    src: url(/Fonts/aaaa1.woff2);
+}
+@font-face {
+    font-family: sc;
+    src: url(/Fonts/sc.woff);
+}
+
+@font-face {
+    font-family: a3;
+    src: url(/Fonts/Aber-Mono-Regular.otf);
+}
+
+@font-face {
+    font-family: yy;
+    src: url(/Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+@font-face {
+    font-family: xx1;
+    src: url(/Fonts/x1.ttf);
+}
+@font-face {
+    font-family: y1;
+    src: url(/Fonts/y1.woff2);
+}
+@font-face {
+    font-family: y2;
+    src: url(/Fonts/y2.woff2);
+}
+@font-face {
+    font-family: z1;
+    src: url(/Fonts/z1.woff2);
+}
+

@@ -1,0 +1,41 @@
+#placeorderbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vw;    
+}
+.buttonp{
+    width: 12vw;
+    height: 3.5vw;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-weight: 600;
+    font-family:y1;
+    cursor: pointer;
+}
+@media (max-width: 490px) {
+    #placeorderbuttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 13vh;    
+    }
+    .buttonp{
+        width: 18vw;
+        height: 5.5vw;
+        background-color: #000;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-weight: 600;
+        font-family:y1;
+        cursor: pointer;
+    }
+}
+

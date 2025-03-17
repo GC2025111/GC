@@ -1,0 +1,294 @@
+
+#registermain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vh;    
+    background: rgb(22,26,66);
+background: linear-gradient(90deg, rgba(22,26,66,1) 0%, rgba(29,29,29,1) 5%, rgba(7,16,38,1) 38%, rgba(5,51,26,1) 65%, rgba(5,61,23,1) 76%, rgba(4,70,20,1) 81%, rgba(4,71,20,1) 87%, rgba(4,72,20,1) 92%, rgba(4,72,20,1) 100%, rgba(3,91,14,1) 100%, rgba(3,96,12,1) 100%, rgba(0,128,1,1) 100%);
+  }
+  
+  #releft {
+    height: 98vh; 
+    width: 45vw;
+    background-color: aliceblue;
+    border-radius:10px;
+    overflow: hidden;
+    margin-left: 1vh;
+  }
+  
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #reltext{
+    position: absolute;
+    z-index: 5;
+    bottom:2vw;
+    font-family: xx;
+    font-size: 3vw;
+    margin-left: 0.5vw;
+    font-weight: 650; 
+    color: whitesmoke;
+    mix-blend-mode:difference;   
+  }
+  #reright{
+    height:83vh;
+    width:45vw;   
+    margin-right: 5vw;
+   
+  }
+  #retop{
+    height:25.5vh;
+    width: 100%;    
+    margin-right: 5vw;    
+    font-family: xx;   
+  }
+  #retop h4{
+    font-size: 1.15vw;
+    font-weight: 500;
+    color:rgb(201, 199, 199);
+  }
+  #retop h1{
+    font-size: 4.67vw;
+    font-weight: 600;
+    color:whitesmoke;
+  } 
+  #remid{
+    height:52.5vh;
+    width: 90%;   
+    margin-top: 3.25vw;
+  }
+  #rebot{
+    height:3.5vh;
+    width: 100%;   
+    font-family: xx;
+    font-size: 1.2vw;  
+    margin-top: 0.9vw;
+    font-weight: 500;
+    color:whitesmoke;
+  }
+  .form{
+    color:rgb(201, 199, 199);
+    font-size: 1.1vw;
+    font-family: xx;    
+    font-weight: 500;    
+  }
+  .place1{
+    width:95%;
+    font-family: xx;
+    font-size: 1.1vw;
+    height:6vh;
+    margin-bottom: 0.9vw;
+    margin-top: 0.2vw;
+    border-radius: 5px;
+    background-color: transparent;
+    color:whitesmoke;
+    border:1px solid rgb(201, 199, 199);
+  }
+  .submit-button{
+    height:9vh;
+    width:100%;
+    border-radius: 5px;
+    font-family: xx;
+    font-size: 2.1vw;
+    font-weight: 700;
+    margin-top: 0.8vw;
+    background: rgb(114,114,114);
+    background: linear-gradient(90deg, rgba(114,114,114,1) 0%, rgba(58,58,58,1) 0%, rgba(29,29,29,1) 29%);
+    color:whitesmoke;
+    cursor:pointer;
+  }
+  .password-container {
+    position: relative;
+    width: 100%; 
+    margin-bottom: 0.7vw;
+}
+
+.password-container input {
+    width: 90%; 
+    font-family: xx;
+    font-size: 1.1vw;
+    height: 6vh;
+    padding-right: 2.5rem; 
+    border-radius: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid rgb(201, 199, 199);
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 2vw; 
+    transform: translateY(-50%);
+    font-size: 1.5vw;
+    color: rgb(201, 199, 199);
+    cursor: pointer;
+}
+.place1:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1.5px solid whitesmoke; /* Glowing border color */
+    box-shadow: 0 0 40px #0b9a2c; /* Add the glow effect */
+    transition: all 0.15s expo-out; /* Smooth transition */
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  /*Phone*/
+  @media (max-width: 490px) {
+    #registermain {
+    height: 100vh;
+    width: 100.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the right side on mobile */
+    padding-top: 1vh;
+    background: linear-gradient(90deg, rgb(32 34 38) 0%, rgb(8, 60, 35) 40%, /* Shortened green transition start */ rgb(6, 75, 30) 60%, /* Shortened mid-green transition */ rgb(5, 90, 25) 80%, /* Shortened late-green transition */ rgb(3, 90, 6) 100%);
+}
+
+#releft {
+    display: none; /* Hide left side on mobile */
+}
+
+#reltext {
+    display: none; /* Hide text on mobile */
+}
+
+#reright {
+    height: 90vh; /* Adjust height for better fit */
+    width: 90vw;
+    margin: 0; /* Remove right margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+#retop {
+    height: auto; /* Adjust height to content */
+    width: 90%;
+    text-align: center; /* Center text */
+    padding-top: 5vh; /* Add top padding */
+}
+
+#retop h1 {
+    font-size: 10vw; /* Slightly smaller for better fit */
+    font-weight: 600;
+    color: whitesmoke;
+    margin-bottom: 1vh; /* Add margin for spacing */
+}
+
+#retop h4 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: rgb(201, 199, 199);
+}
+
+#remid {
+    width: 90%;
+    margin-top: 3vh;
+}
+
+#rebot {
+    width: 90%;
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.form {
+    font-size: 3.8vw !important;
+    font-weight: 600;
+    color: rgb(201, 199, 199);
+}
+.place1,
+.password-container input {
+    width: 95%;
+    font-size: 4vw;
+    font-size: 4.3vw !important;
+
+    height: 6vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    border-radius: 8px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid rgb(201, 199, 199);
+    padding: 0 10px; /* Add padding for better look */
+}
+
+.submit-button {
+    width: 100%;
+    height: 7vh;
+    border-radius: 8px;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-top: 2vh;
+    background: linear-gradient(90deg,  rgba(29, 29, 29, 1) 71%, rgba(58, 58, 58, 1) 100%, rgba(114, 114, 114, 1) 100%);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 4vw;
+    color: rgb(201, 199, 199);
+    cursor: pointer;
+}
+.parcel1{
+ font-size: 4.3vw;
+
+}
+
+.place1:focus,
+.password-container input:focus {
+    outline: none;
+    border: 1.5px solid whitesmoke;
+    box-shadow: 0 0 20px #0b9a2c;
+    transition: all 0.15s ease-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  }

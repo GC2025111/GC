@@ -1,0 +1,277 @@
+#loginmain {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1vh;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 26, 66, 1) 0%,
+    rgba(29, 29, 29, 1) 5%,
+    rgba(7, 16, 38, 1) 38%,
+    rgba(5, 51, 26, 1) 65%,
+    rgba(5, 61, 23, 1) 76%,
+    rgba(4, 70, 20, 1) 81%,
+    rgba(4, 71, 20, 1) 87%,
+    rgba(4, 72, 20, 1) 92%,
+    rgba(4, 72, 20, 1) 100%,
+    rgba(3, 91, 14, 1) 100%,
+    rgba(3, 96, 12, 1) 100%,
+    rgba(0, 128, 1, 1) 100%
+  );
+}
+
+#loginleft {
+  height: 98vh;
+  width: 45vw;
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 1vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#loginlefttext {
+  position: absolute;
+  z-index: 5;
+  bottom: 2vw;
+  font-size: 3vw;
+  margin-left: 0.5vw;
+  font-weight: 650;
+  color: whitesmoke;
+  mix-blend-mode: difference;
+}
+
+#loginright {
+  height: 83vh;
+  width: 45vw;
+  margin-right: 5vw;  
+}
+
+#lright {
+  height: 76vh;
+  width: 40vw;
+  margin-right: 5vw;
+}
+
+#lotop {
+  height: 25.5vh;
+  width: 100%;
+  margin-right: 5vw;
+}
+
+#lotop h1 {
+  color: whitesmoke;
+  font-size: 4.67vw;  
+  font-family: xx;
+}
+
+#lotop h4 {
+  color: rgb(201, 199, 199);
+  font-size: 1.15vw;
+  font-weight: 500;
+  font-family: xx;
+}
+
+#lomid {
+  height: 45vh;
+  width: 90%;
+}
+
+#lobot {
+  height: 5vh;
+  width: 100%;
+  font-size: 1.2vw;
+  color: whitesmoke;
+  font-family: xx;
+}
+
+.form {
+  color: rgb(201, 199, 199);
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.place1 {
+  width: 95%;
+  font-size: 1.1vw;
+  height: 6vh;
+  margin-bottom: 0.9vw;
+  margin-top: 0.2vw;
+  border-radius: 5px;
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid rgb(201, 199, 199);
+}
+
+#login-button {
+  height: 9vh;
+  width: 95%;
+  border-radius: 5px;
+  font-size: 2.1vw;
+  font-weight: 700;
+  font-family: xx;
+  margin-top: 1.2vw;
+  background: linear-gradient(
+    90deg,
+    rgba(114, 114, 114, 1) 0%,
+    rgba(58, 58, 58, 1) 0%,
+    rgba(29, 29, 29, 1) 29%
+  );
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.place1 {
+  width: 100%;
+  padding-right: 3vw;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 45%;
+  right: -2vw;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: whitesmoke;
+  font-size: 1.5vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lobottom {
+  font-size: 1.1vw;
+  color: whitesmoke;
+  margin-top: 1.25vw;
+  font-family: xx;
+}
+
+@media (max-width: 490px) {
+  #loginmain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(29,29,29);
+    background: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(5,51,26,1) 65%, rgba(5,61,23,1) 76%, rgba(4,70,20,1) 81%, rgba(4,71,20,1) 87%, rgba(4,72,20,1) 92%, rgba(4,72,20,1) 100%, rgba(3,91,14,1) 100%, rgba(3,96,12,1) 100%, rgba(0,128,1,1) 100%);  #loginleft {
+    display: none;
+  }
+
+  #loginright {
+    width: 90vw;
+    margin: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  #lright {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  #lotop {
+    width: 100%;
+    padding-top: 3vw;
+    text-align: left; 
+  }
+
+  #lotop h1 {
+    font-size: 14vw;
+    margin-bottom: 1vw;
+  }
+
+  #lotop h4 {
+    font-size: 5.5vw !important;
+    margin-top: 1vw;
+  }
+
+  #lomid {
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  #lobot {
+    width: 100%;
+    text-align: left; /* Align bottom text to the left */
+    margin-top: 2vh;
+  }
+
+  .form {
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  .place1 {
+    width: 100%;
+    font-size: 4.3vw;
+    height: 6vh;
+    margin-left: -3vw;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+  }
+
+  #login-button {
+    width: 100%;
+    height: 8vh;
+    font-size: 5vw;
+    margin-top: 2vh;
+    background-color: #1d1d1d;
+  }
+
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .toggle-password {
+    right: 0.5vw;
+    font-size: 4.3vw;
+  }
+
+  #lobottom {
+    width: 100%;
+    text-align: left; /* Align bottom text to the left */
+    font-size: 4vw;
+    margin-top: 2vh;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+}

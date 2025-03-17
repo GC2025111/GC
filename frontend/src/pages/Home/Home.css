@@ -1,0 +1,16 @@
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+  }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15vw;
+  }

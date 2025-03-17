@@ -1,0 +1,431 @@
+.ordersmain{
+    width:100%;
+    padding:1.5vw;
+}
+.head{
+    font-family:xx;
+    font-size:4.5vw;
+    font-weight:700;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:2vw;
+}
+.orders{
+    width:97%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:0.3vw;  
+   
+}
+.eachorder1{
+    width:100%;    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:0.5vw;
+   border:1px solid rgb(188, 183, 183);
+    overflow:hidden;  
+    margin-bottom:10vw; 
+
+}
+.eotop{
+    width:100%;
+    background-color:whitesmoke;
+    height:5.5vw;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.etleft{
+    width:30%;    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+    margin-left:1.5vw;
+}
+.etdate{
+    color:#0097d8;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+.etdtime{
+    color:green;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+.ettotal{
+   color:#0097d8;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+.etright{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    margin-right:1.5vw;
+}
+
+.orderid{
+    color:red;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+
+.viewbill{
+    color:#0097d8;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+
+.eobottomitem{
+    height:15vw;
+    width:97vw;   
+    display:flex;
+    border-bottom:1px solid rgb(188, 183, 183);
+}
+.eobottomitemleft{
+    height:100%;
+    width:60%;       
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.5vw;
+    
+}
+.eobottomitemimg{
+    height:12vw;
+    width:9vw;    
+    border-radius:0.45vw;
+    overflow:hidden;
+}
+.eobottomitemimg img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.eobottomitemname{
+    font-family:a1;
+    font-size:1.7vw;
+    font-weight:700;
+    width:19vw
+}
+.eobottomitemquantity{
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:700;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+.q1{
+    color:#0097d8;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:700;
+}
+ .q2{
+    color:green;
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:700;
+}
+.eobottomitemright{     
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.buyagain{
+    height:2vw;
+    width:7vw;    
+    border-radius:0.5vw;
+}
+.buyagainbtn{
+    height:100%;
+    width:100%;
+    background-color:#FFCE12;
+    border-radius:0.5vw;
+    font-family:a1;
+    font-size:1vw;
+    font-weight:600;
+    cursor:pointer;
+}
+.eobottomitemrating{
+    font-family:a1;
+    font-size:1.2vw;
+    font-weight:600;
+}
+.eobottomitemratingstars{
+    width:35%;   
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.eobottomitemratingreviewtextarea{
+    margin-top:1vw;
+    height:3vw;
+    width:100%;
+    border-radius:0.3vw;
+    border:1px solid rgb(188, 183, 183);
+    padding:0.5vw;
+    font-family:a1;
+}
+.eobottomitemratingreviewbtn{
+    height:2vw;
+    width:8vw;
+    border-radius:0.3vw;
+    background-color:#FFCE12;
+    font-family:a1;
+    font-size:1vw;
+    font-weight:600;
+    cursor:pointer;
+}
+.responsive-stars span {
+    font-size: 1.2vw !important; 
+    display: inline-block;
+  }
+  
+  .responsive-stars span svg {
+    width: 1em; 
+    height: 1em;
+  }
+  .eobottomitemratingreviewtextarea{
+    font-family:a1;
+    font-size:1vw;
+    font-weight:500;
+    
+  }
+
+
+
+  @media (max-width: 490px) {
+    .head{
+        font-family:xx;
+        font-size:8vw;
+        font-weight:700;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top:2vw;
+
+    }
+    .orders{
+        width:97%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        border-radius:0.3vw;  
+       
+    }
+    .eachorder1{
+        width:100%;    
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        border-radius:0.5vw;
+       border:1px solid rgb(188, 183, 183);
+        overflow:hidden;  
+        margin-bottom:10vw; 
+    
+    }
+    .eotop{
+        width:100%;
+        background-color:whitesmoke;
+        height:5.3vh;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .etleft{
+        width:55%;    
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:100%;
+        margin-left:1.5vw;
+        
+    }
+    .etdate{
+        color:#0097d8;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:600;
+    }
+    .etdtime{
+        color:green;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:600;
+    }
+    .ettotal{
+       color:#0097d8;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:600;
+
+    }
+    .etright{
+        width:29%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100%;
+        margin-right:1.5vw;
+    }
+    
+    .orderid{
+        color:red;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:600;
+    }
+    
+    .viewbill{
+        color:#0097d8;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:600;
+    }
+    .eobottomitem{
+        height:10vh;
+        width:97vw;   
+        display:flex;
+        border-bottom:1px solid rgb(188, 183, 183);
+    }
+    .eobottomitemleft{
+        height:100%;
+        width:66%;       
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0.5vw;
+        
+    }
+    .eobottomitemimg{
+        height:9vh;
+        width:16vw;    
+        border-radius:0.45vw;
+        overflow:hidden;
+    }
+    .eobottomitemimg img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+    .eobottomitemname{
+        font-family:a1;
+        font-size:1.1vh;
+        font-weight:700;
+        width:19vw
+    }
+    .eobottomitemquantity{
+        font-family:a1;
+        font-size:1vh;
+        font-weight:700;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+
+    }
+    .q1{
+        color:#0097d8;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:700;
+
+    }
+     .q2{
+        color:green;
+        font-family:a1;
+        font-size:1vh;
+        font-weight:700;
+
+    }
+    .eobottomitemright{     
+        width:40%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .buyagain{
+        height:1.8vh;
+        width:13.5vw;    
+        border-radius:0.5vw;
+        
+    }
+
+    .buyagainbtn{
+        height:100%;
+        width:100%;
+        background-color:#FFCE12;
+        border-radius:0.5vw;
+        font-family:a1;
+        font-size:0.8vh;
+        font-weight:600;
+        cursor:pointer;
+        
+    }
+    .eobottomitemrating{
+        margin-top:1.3vw;
+        font-family:a1;
+        font-size:0.9vh;
+        font-weight:600;
+
+    }
+    .eobottomitemratingstars{
+        width:35%;   
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    
+    .eobottomitemratingreviewtextarea{
+        margin-top:1vw;
+        height:2.2vh;
+        width:100%;
+        border-radius:0.3vw;
+        border:1px solid rgb(188, 183, 183);
+        padding:0.5vw;
+        font-family:a1;
+        font-size:0.65vh;
+    }
+    .eobottomitemratingreviewbtn{
+        height:1.8vh;
+        width:8vw;
+        border-radius:0.3vw;
+        background-color:#FFCE12;
+        font-family:a1;
+        font-size:0.8vh;
+        font-weight:600;
+        margin-bottom:0.99vw;
+        cursor:pointer;
+    }
+    .eobottomitemratingreviewtextarea{
+        font-family:a1;
+        font-size:0.65vh;
+        font-weight:500;
+        
+      }
+  }
