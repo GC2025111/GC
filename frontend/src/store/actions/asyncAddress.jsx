@@ -1,7 +1,6 @@
 import axios from "axios";
 import { setAddress, getAddress, deleteAddress } from "../slices/addressSlice";
-import dotenv from "dotenv";
-dotenv.config();
+
 
 export const asyncaddAddress =(formData)=> async (dispatch, getState) => {
     const backendUrl = import.meta.env.VITE_BACKEND;
