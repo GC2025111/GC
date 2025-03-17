@@ -28,7 +28,7 @@ app.use(cors({
     origin: [      
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://admin-orpin-ten.vercel.app",
+      "https://friendly-kitten-5dfde5.netlify.app",
       "https://tiny-kleicha-131d07.netlify.app",
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
