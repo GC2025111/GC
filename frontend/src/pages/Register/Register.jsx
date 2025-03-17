@@ -11,6 +11,8 @@ import { toast } from "react-toastify";
 import axios from 'axios';
 import { setToken } from '../../store/slices/tokenSlice';
 import { setUserId } from '../../store/slices/userIdSlice';
+import dotenv from "dotenv";
+dotenv.config();
 
 function Register() {
 

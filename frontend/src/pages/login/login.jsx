@@ -11,6 +11,8 @@ import { toast } from "react-toastify";
 import axios from 'axios';
 import { setToken } from '../../store/slices/tokenSlice';
 import { setUserId } from '../../store/slices/userIdSlice';
+import dotenv from "dotenv";
+dotenv.config();
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -23,6 +25,7 @@ function Login() {
     setShowPassword((prev) => !prev);
   };
   const backendUrl = import.meta.env.VITE_BACKEND;
+  console.log(backendUrl);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
