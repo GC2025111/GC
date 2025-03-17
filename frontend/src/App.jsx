@@ -20,9 +20,10 @@ function App() {
     <ToastContainer />
     <div id="main">
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        {token ? <Route path='/' element={<Home/>}/> : <Route path='/' element={<Login/>}/>}
         {token ? <Route path='/home' element={<Home/>}/> : <Route path='/home' element={<Login/>}/>}
         {token ? <Route path='/cart/:userId' element={<Cart/>}/> : <Route path='/cart' element={<Login/>}/>}
         {token ? <Route path='/placeorder/*' element={<Placeorder/>}/> : <Route path='/placeorder' element={<Login/>}/>}
