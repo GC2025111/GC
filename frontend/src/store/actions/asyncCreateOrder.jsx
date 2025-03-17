@@ -3,7 +3,7 @@ import {setApprovalURL,setIsLoading,setOrderId,getOrders} from "../slices/orderS
 
 
 export const asyncCreateOrder = (orderData)=>async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     console.log(orderData);  
     try{
       const response =await axios.post(`${backendUrl}/api/orders/create-order`,orderData);
@@ -22,7 +22,7 @@ export const asyncCreateOrder = (orderData)=>async (dispatch,getState) => {
 
 
 export const asyncgetOrders = (userId) => async (dispatch, getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;    
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";    
     try {
         const response = await axios.get(`${backendUrl}/api/orders/userorders/${userId}`);      
        const orders = dispatch(getOrders(response.data.orders)); 
@@ -34,7 +34,7 @@ export const asyncgetOrders = (userId) => async (dispatch, getState) => {
 
 
 export const asyncStripePayment=(orderData)=> async(dispatch,getState)=>{
-    const backendUrl=import.meta.env.VITE_BACKEND;    
+    const backendUrl=import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";    
     try{
        const response=await axios.post(`${backendUrl}/api/orders/create-order-stripe`,orderData);
        console.log("Stripe Payment Response",response.data);

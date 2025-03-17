@@ -3,7 +3,7 @@ import { setAddress, getAddress, deleteAddress } from "../slices/addressSlice";
 
 
 export const asyncaddAddress =(formData)=> async (dispatch, getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");    
     try{
     const response = await axios.post(`${backendUrl}/api/address/addAddress`,formData);
@@ -18,7 +18,7 @@ export const asyncaddAddress =(formData)=> async (dispatch, getState) => {
 };
 
 export const asyncgetAddress =(userId)=> async (dispatch, getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
     try{
 const response = await axios.get(`${backendUrl}/api/address/getAddress/${userId}`);
@@ -33,7 +33,7 @@ console.log(response.data);
 };
 
 export const asyncdeleteAddress =(userId) => async (dispatch, getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
     try{
         const response = await axios.delete(`${backendUrl}/api/address/deleteAddress/${userId}`);

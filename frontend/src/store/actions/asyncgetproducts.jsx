@@ -3,7 +3,7 @@ import { getProducts } from "../slices/productSlice";
 
 
 export const asyncgetproducts = () => async(dispatch,getState) =>{
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");   
    
     try{

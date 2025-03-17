@@ -23,7 +23,7 @@ function Register() {
       const [showPassword, setShowPassword] = useState(false);
       const navigate = useNavigate();
       const dispatch = useDispatch();
-      const backendUrl = import.meta.env.VITE_BACKEND;
+      const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
       console.log(backendUrl);
 
       const handleChange = (e) => {

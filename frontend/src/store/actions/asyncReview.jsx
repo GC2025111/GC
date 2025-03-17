@@ -2,7 +2,7 @@ import axios from "axios";
 import { addReview, getReviews } from "../slices/reviewSlics";
 
 export const asyncAddReview=(userId, productId, ratings, text)=>async(reviewData)=>{
-    const backendUrl=import.meta.env.VITE_BACKEND;
+    const backendUrl=import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     try{
         const response=await axios.post(`${backendUrl}/api/reviews/addreview`,{
             userId,
@@ -18,7 +18,7 @@ export const asyncAddReview=(userId, productId, ratings, text)=>async(reviewData
     }
 }
 export const asyncGetReviews=async(productId)=>{
-    const backendUrl=import.meta.env.VITE_BACKEND;
+    const backendUrl=import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     try{
         const response=await axios.get(`${backendUrl}/api/reviews/getreview/${productId}`);
         dispatch(getReviews(response.data.reviews));

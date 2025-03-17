@@ -11,7 +11,7 @@ const Login = ({setToken,token}) => {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [isLoading, setIsLoading] = useState(false);    
-    const backendUrl=import.meta.env.VITE_BACKEND;
+    const backendUrl=import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     console.log(backendUrl);
 
 

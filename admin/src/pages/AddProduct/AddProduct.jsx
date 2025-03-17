@@ -3,7 +3,7 @@ import "./AddProduct.css"
 import axios from 'axios';
 import { toast } from "react-toastify";
 const AddProduct = ({token}) => {
-  const backendUrl=import.meta.env.VITE_BACKEND;
+  const backendUrl=import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [quantity, setQuantity] = useState('');

@@ -23,8 +23,8 @@ function Login() {
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
   };
-  const backendUrl = import.meta.env.VITE_BACKEND;
-  console.log("backendUrl="+backendUrl);
+  const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);

@@ -4,7 +4,7 @@ import { addToCart, getCart, updateCart, deleteCart, deleteCartAll } from "../sl
 
 
 export const asyncaddToCart = (userId,productId,quantity) => async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
 
     console.log("productID="+ productId, "quantity="+ quantity, "userId="+userId);
@@ -19,7 +19,7 @@ catch(error){
 }
 
 export const asyncgetCart = (userId) => async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
     try{
         const response=await axios.get(`${backendUrl}/api/cart/getcart/${userId}`);
@@ -32,7 +32,7 @@ export const asyncgetCart = (userId) => async (dispatch,getState) => {
     }
 }
 export const asyncdeleteCart = (userId,productId) => async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
    
     try{
@@ -46,7 +46,7 @@ export const asyncdeleteCart = (userId,productId) => async (dispatch,getState) =
     }
 }
 export const asyncdeleteCartAll = (userId) => async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
     try{
         const response=await axios.delete(`${backendUrl}/api/cart/deletecartall/${userId}`);
@@ -59,7 +59,7 @@ export const asyncdeleteCartAll = (userId) => async (dispatch,getState) => {
 }
 
 export const asyncupdateCart = (userId,productId,quantity) => async (dispatch,getState) => {
-    const backendUrl = import.meta.env.VITE_BACKEND;
+    const backendUrl = import.meta.env.VITE_BACKEND||"https://backend-nine-nu-95.vercel.app";
     const token=localStorage.getItem("token");
     console.log("userId=",userId," productId=",productId," quantity=",quantity);
     try{
