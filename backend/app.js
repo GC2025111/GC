@@ -28,7 +28,8 @@ app.use(cors({
     origin: [      
       "http://localhost:5173",
       "http://localhost:5174",
-      "*"
+      "https://gc-frontend-gamma.vercel.app/",
+      "https://gc-admin-livid.vercel.app/",
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
