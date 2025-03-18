@@ -27,6 +27,7 @@ function Register() {
       console.log(backendUrl);
 
       const handleChange = (e) => {
+        
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
       
@@ -116,7 +117,7 @@ function Register() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="Enter your collage email"
                 required
               />
             </div>
