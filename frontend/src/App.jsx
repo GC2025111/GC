@@ -2,7 +2,7 @@ import React,{ useState,useEffect } from 'react';
 import './App.css';
 import {Routes,Route} from 'react-router-dom';
 import Register from "./pages/Register/Register";
-  import Login from "./pages/Login/Login";
+import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import Placeorder from "./pages/Placeorder/Placeorder";
