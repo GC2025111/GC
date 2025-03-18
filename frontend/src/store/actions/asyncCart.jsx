@@ -23,7 +23,7 @@ export const asyncgetCart = (userId) => async (dispatch,getState) => {
     const token=localStorage.getItem("token");
     try{
         const response=await axios.get(`${backendUrl}/api/cart/getcart/${userId}`);
-        
+        console.log(response.data.cart.items);        
         dispatch(getCart(response.data.cart.items));
         localStorage.setItem("cart",(response.data.cart.items));        
     }

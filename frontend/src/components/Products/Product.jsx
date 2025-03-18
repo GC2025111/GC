@@ -17,7 +17,7 @@ function Product({name,price,quantity,image,handleAddToCart,userId,handlebuynow,
         </div>
         <div id="pb4">
           <button id="addtocart" onClick={()=>handleAddToCart(userId,productId,1)}>Add to Cart</button>
-          <button id="buynow" onClick={handlebuynow}>Buy Now</button>
+          <button id="buynow" onClick={()=>handlebuynow(userId,productId,1)}>Buy Now</button>
         </div>
       </div>
     </div>

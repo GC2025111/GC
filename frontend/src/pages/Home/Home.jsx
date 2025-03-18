@@ -44,7 +44,6 @@ function Home() {
 
   const cart=useSelector((state)=>state.cart);
   const userId=useSelector((state)=>state.userId.userId);
-  console.log(cart);
   const q=1;
 
   
@@ -72,8 +71,14 @@ function Home() {
     dispatch(setTotalNumberOfItems(totalnumberofitems));
     localStorage.setItem('totalNumberOfItems', totalnumberofitems);
   }
-  const handlebuynow=()=>{
-
+  const handlebuynow=(userId,productId,quantity)=>{
+    dispatch(asyncaddToCart(userId,productId,quantity));
+    dispatch(asyncgetCart(userId));
+    console.log(cart);
+    totalnumberofitems++;
+    dispatch(setTotalNumberOfItems(totalnumberofitems));
+    localStorage.setItem('totalNumberOfItems', totalnumberofitems);
+    navigate('/placeorder/checkout');
   }
   
 
