@@ -25,27 +25,35 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(cors({
-  origin: '*', // Allows requests from any origin
+  origin: [
+    
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://admin-orpin-ten.vercel.app",
+    "https://glowing-kitsune-2677a8.netlify.app"
+    
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-  credentials: true, // Be cautious with credentials when using '*'
- }));
- 
- app.options('*', cors());
- 
- app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); // Allows any origin
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  
-  if (req.method === 'OPTIONS') {
+  credentials: true,
+}));
+
+
+
+app.options('*', cors());
+
+app.use((req, res, next) => {
+res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
+res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+res.header('Access-Control-Allow-Credentials', 'true');
+if (req.method === 'OPTIONS') {
   res.sendStatus(204); 
-  } else {
+} else {
   next();
-  }
- });
- 
+}
+});
+
 
   app.get("/", (req, res) => {
     res.send("Welcome!");

@@ -1,12 +1,11 @@
 import React,{ useState,useEffect } from 'react';
-
 import './App.css';
 import {Routes,Route} from 'react-router-dom';
-import Register from "./pages/Register/Register"
-import Login from "./pages/Login/Login"
-import Home from "./pages/Home/Home"
-import Cart from "./pages/Cart/Cart"
-import Placeorder from "./pages/Placeorder/Placeorder"
+import Register from "./pages/Register/Register";
+  import Login from "./pages/Login/Login";
+import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
+import Placeorder from "./pages/Placeorder/Placeorder";
 import Verify from './pages/Placeorder/Verify';
 import { useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
